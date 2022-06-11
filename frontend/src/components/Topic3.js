@@ -27,7 +27,7 @@ export default function Topic1() {
 
   useEffect(() => {
     const getCommentsApi = async () => {
-      const resp = await axios.get("http://localhost:4000");
+      const resp = await axios.get("https://it-forum-eve.herokuapp.com/");
       console.log(resp.data);
 
       setComments(resp.data);
@@ -36,13 +36,13 @@ export default function Topic1() {
   }, []);
 
   const onDelete = async (id) => {
-    const res = await axios.delete("http://localhost:4000", {
+    const res = await axios.delete("https://it-forum-eve.herokuapp.com/", {
       data: { id: id },
     });
   };
 
   const onEdit = async (id) => {
-    const res = await axios.put("http://localhost:4000", {
+    const res = await axios.put("https://it-forum-eve.herokuapp.com/", {
       data: { id: id },
     });
   };

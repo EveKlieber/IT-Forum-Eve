@@ -10,7 +10,7 @@ const Board = () => {
 
   useEffect(() => {
     const getCommentsApi = async () => {
-      const resp = await axios.get("http://localhost:4000");
+      const resp = await axios.get("https://it-forum-eve.herokuapp.com/");
       console.log(resp.data);
 
       setComments(resp.data);

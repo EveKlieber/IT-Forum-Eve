@@ -22,7 +22,7 @@ const AddComment = (props) => {
   const onSubmit = async (e) => {
     // e.preventDefault();
     console.log("submit");
-    const res = await axios.post("http://localhost:4000", newComment);
+    const res = await axios.post("https://it-forum-eve.herokuapp.com/", newComment);
   };
 
   return (

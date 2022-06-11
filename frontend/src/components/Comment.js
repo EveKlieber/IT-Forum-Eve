@@ -8,7 +8,7 @@ export default function Comment(props) {
   const [isEdit, setIsEdit] = useState(false);
 
   const putMessage = async () => {
-    const res = await axios.put("http://localhost:4000", {
+    const res = await axios.put("https://it-forum-eve.herokuapp.com/", {
       id: props.comment.id,
       message: message,
     });
