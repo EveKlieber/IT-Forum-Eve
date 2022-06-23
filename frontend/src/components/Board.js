@@ -17,6 +17,8 @@ const Board = () => {
     };
     getCommentsApi();
   }, []);
+
+  
   const topic1Comments = comments.filter(
     (comment) => comment.type === "topic1"
   );
