@@ -25,7 +25,7 @@ export default function Topic1() {
     .toString()
     .padStart(2, "0")}:${current.getSeconds().toString().padStart(2, "0")}`;
 
-  // Data comments
+  // Data comments:
 
   useEffect(() => {
     const getCommentsApi = async () => {
