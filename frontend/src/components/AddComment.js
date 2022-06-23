@@ -1,4 +1,3 @@
-import { CommentsContext } from "../context/CommentsContext";
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import axios from "axios";
